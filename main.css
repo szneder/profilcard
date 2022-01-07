@@ -13,10 +13,14 @@
 }
 
 body {
+  background: url('assets/whitehouse.jpg') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Rajdhani';
+  color: darkblue;
 }
 
 #profil-card {
@@ -31,9 +35,20 @@ body {
   width: 500px;
   height: 700px;
   float: left;
+  background: url(assets/claireunderwood.jpeg);
   margin-left: 100px;
   margin-top: 22.5px;
   border-radius: 5%;
+}
+
+img {
+  width: 500px;
+  height: 700px;
+  border-radius: 5%;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 #personal-dates {
@@ -43,6 +58,19 @@ body {
   border-radius: 5%;
   margin-top: 22.5px;
   margin-right: 100px;
+  background-color: hsla(0, 0%, 100%, .8);
+}
+
+h1:hover {
+  transform: scale(1.1);
+}
+
+h2:hover {
+  transform: scale(1.1);
+}
+
+p:hover {
+  transform: scale(1.1);
 }
 
 #name {
@@ -50,6 +78,15 @@ body {
   height: 200px;
   margin-top: 40px;
   margin-left: 50px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 20px;
 }
 
 #about {
@@ -58,6 +95,8 @@ body {
   margin-bottom: 20px;
   margin-left: 50px;
   margin-top: 20px;
+  line-height: 2.5;
+  text-align: justify;
 }
 
 #links {
@@ -65,6 +104,7 @@ body {
   height: 100px;
   margin-bottom: 10px;
   margin-left: 50px;
+  text-align: center;
   margin-top: 90px;
 }
 
@@ -76,23 +116,4 @@ ul {
 
 li {
   display: inline;
-}
-.gray {
-  background-color: gray;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
-.white {
-  background-color: white;
 }
